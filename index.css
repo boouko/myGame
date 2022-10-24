@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Amatic SC', cursive, 'arial';
+}
+
+button:hover{
+    background-color: burlywood;
+    color: white;
+    border-color: #191919;
+}
+
+#canvas1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #543d31;
+    background: url(images/canvasBg.png) no-repeat center fixed;
+    background-size: cover;
+}
+
+
+/* Nav bar */
+#score {
+    background-color:#191919;
+    background-image: url(images/navBarBg.png);
+    width: 100%;
+    height: 60px;
+    margin: 0;
+    position: relative;
+    color: white;
+}
+
+
+#score h1 {
+    margin-bottom: 10px;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    left:80px ;
+}
+
+#score p {
+    font-size: 30px;
+    color: #fff1d0;
+    position: absolute;
+    top: 50%;
+    margin-top: -18px;
+    right: 30px;
+    font-weight: 900;
+}
+
+#score p span {
+    font-weight: 700;
+}
+
+#icon {
+    top: 50%;
+    position: absolute;
+    left: 30px;
+    margin-top: -14px;
+
+
+}
+
+#moneyIcon {
+    position: absolute;
+    width: 30px;
+    top: 50%;
+    margin-top: -15px;
+    right: 140px;
+}
+
+
+/* alert box */
+#alert {
+    height: 250px;
+    width: 600px;
+    position: absolute;
+    left: 50%;
+    margin-left: -300px;
+    top: 50%;
+    margin-top: -100px;
+    color:#191919;
+    text-align: left;
+    display: block;
+    background-image: url(images/alertBox.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+#alert h1 {
+    font-size: 28px;
+    margin-top: 65px;
+    margin-left: 155px;
+}
+
+#alert h1 strong {
+    text-decoration: underline;
+}
+
+
+#alert p {
+    font-family: monospace;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 155px;
+}
+
+
+#alertBtn {
+    font-size: 28px;
+    padding: 0 20px;
+    border: solid 1px;
+    border-radius: 30px;
+    margin-left: 221px;
+    margin-top: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+
+/* continue box */
+#continue {
+    height: 250px;
+    width: 600px;
+    position: absolute;
+    left: 50%;
+    margin-left: -300px;
+    top: 50%;
+    margin-top: -100px;
+    color:#191919;
+    text-align: left;
+    display: none;
+    background-image: url(images/continueBox.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+#continue p {
+    font-size: 32px;
+    margin-top: 10px;
+
+}
+
+#continue span {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+#continue img {
+    margin-top: 50px;
+}
+
+#continueBtn {
+    font-size: 28px;
+    padding: 0 20px;
+    border: solid 1px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+
+/* Mineral collected status */
+#mineralRecord {
+    margin-right: 20px;
+    margin-top: 10px;
+    position: absolute;
+    right: 0;
+    text-align:right;
+}
+
+#Icron-wrapper {
+    padding: 0 5px;
+    background-color:rgba(255,255,255,0.2);
+    border-radius: 20px;
+}
+
+#mineralRecord img{
+    width: 20px;
+    margin-top: 5px;
+}
+
+/* #diamond {
+    width: 48px;
+} */
+
+
+/* lucky shovel */
+#luckyBtn {
+    font-size: 24px;
+    padding: 0 10px;
+    border-radius: 20px;
+    border: solid 1px;
+    margin-top: 8px;
+    position: relative;
+    display: none;
+}
+
+#lucky-shovel{
+    height: 250px;
+    width: 600px;
+    position: absolute;
+    left: 50%;
+    margin-left: -300px;
+    top: 50%;
+    margin-top: -100px;
+    color:#191919;
+    text-align: left;
+    background-image: url(images/continueBox.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: none;
+}
+
+#lucky-shovel img {
+    width: 40px;
+    margin-top: 50px;
+    margin-right: 5px;
+}
+
+#lucky-shovel p {
+    font-size: 18px;
+    font-family: monospace, helvetica;
+    margin-top: 20px;
+
+}
+
+#lucky-shovel h2 {
+    font-size: 32px;
+    display: inline;
+    font-weight: 700;
+}
+
+#redeemBtn {
+    font-size: 30px;
+    padding: 0 20px;
+    border-radius: 20px;
+    border: solid 1px;
+    margin-top: 20px;
+    position: relative;
+    
+}
+
+#redeemBtn img {
+    margin: 0;
+    width: 25px;
+    padding-top: 1px;
+}
+
+#closeBtn {
+    font-size: 30px;
+    padding: 0 15px;
+    border-radius: 20px;
+    border: solid 1px;
+    margin-left: 50px;
+
+}
+
+#closeBtn:hover {
+    background-color: #E03044;
+    border-color:#191919;
+}
+
+#closeBtn img {
+    width: 20px;
+    margin: 0;
+    padding-bottom: 1px;
+    margin-right: 5px;
+
+}
+
+
+/* Game ended annoucement */
+#game-over{
+    height: 250px;
+    width: 600px;
+    position: absolute;
+    left: 50%;
+    margin-left: -300px;
+    top: 50%;
+    margin-top: -100px;
+    color:#191919;
+    text-align: left;
+    background-image: url(images/continueBox.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: none;
+}
+
+#game-over h2 {
+    font-size: 32px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#game-over img {
+    margin-top: 50px;
+}
+
+#continueBtn2 {
+    font-size: 28px;
+    padding: 0 20px;
+    border: solid 1px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+
+/* Instruction */
+#instruction {
+    position: absolute;
+    font-family: monospace, Helvetica, sans-serif;
+    font-weight: 100;
+    left: 20px;
+    bottom: 1%;
+    color: white;
+}

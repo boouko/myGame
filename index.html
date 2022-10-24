@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digging for Diamonds</title>
+    <link type="text/css" rel="stylesheet" href="index.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <div>
+        <canvas id="canvas1"></canvas>
+    </div>
+
+    <div id="score">
+       <div id="icon"><img src="images/diamond-icon.png" alt="hat icon"></div>
+       <h1>DIGGING FOR DIAMONDS</h1> 
+       <img id='moneyIcon' src="images/money.png" alt="money icon">
+       <p>money:&nbsp;$ <span id="scores">0</span></p>
+    </div>
+
+
+    <div id='alert'>
+        <h1>
+            <strong>Click around</strong> &nbsp;  to find the hidden minerals<br>
+        </h1>
+
+        <p>
+           *Sound level will increases as your mouse <br>gets closer
+        </p>
+
+        <button id="alertBtn">Start DIGGING</button>
+    </div>
+
+
+    <div id="continue">
+        <div id="mineralType">
+
+        </div>
+        <p>Congratulations! 
+            You have found &nbsp; <span id="mineralName"> </span>
+        </p>
+        <button id="continueBtn">CONTINUE DIGGING</button>
+    </div>
+    
+
+    <div id="mineralRecord">
+
+        <div id="Icron-wrapper">
+
+        <span id="ironIcon">
+            <img  src="images/empty.png" alt="empty mineral">
+        </span>
+
+        <span id='copperIcon'>
+            <img src="images/empty.png"  alt="empty mineral">
+        </span>
+
+        <span id='goldIcon'>
+            <img src="images/empty.png"  alt="empty mineral">
+        </span>
+
+        <span id='rubyIcon'>
+            <img src="images/empty.png"  alt="empty mineral">
+        </span>
+        
+        <span id='diamondIcon'>
+            <img src="images/empty.png"  alt="empty mineral">
+        </span>
+        </div>
+
+        <button id="luckyBtn">
+            lucky shovel
+        </button>
+    </div>
+
+
+    <div id="lucky-shovel">
+        <img src="images/luckyShovel.png" alt="shovel">
+
+        <h2>lucky shovel</h2>
+
+        <p>
+            Lucky shovel gives you a greater chance of <br>getting DIAMONDS
+        </p>
+
+        <button id="redeemBtn">
+            <img src="images/money.png" alt="money">
+            <strong>$30</strong>
+        </button>
+
+        <button id="closeBtn">
+            <img src="images/cancel.png" alt="cancel">
+            Redeem later
+        </button>
+    </div>
+
+
+    <div id="game-over">
+        <img src="images/iron.png" alt="">
+        <img src="images/copper.png" alt="">
+        <img src="images/gold.png" alt="">
+        <img src="images/ruby.png" alt="">
+        <img src="images/diamond.png" alt="">
+
+        <h2>You have successfully collected all the minerals !!</h2>
+        <button id="continueBtn2">CONTINUE DIGGING</button>
+    </div>
+
+
+    <p id="instruction">
+        *Please make sure you turn your audio on before playing
+        <br> The game works better on desktop and in full screen mode
+    </p>
+    
+<body>
+    <script src="index.js"></script>
+</body>
+</html>
